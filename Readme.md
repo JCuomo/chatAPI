@@ -3,7 +3,8 @@
 Basic REST API using relational DB for a chat system. 
 
 ## Installation
-> pip install -r requirements.txt
+Using docker:
+  - docker-compose up
 
 ## End-points
 
