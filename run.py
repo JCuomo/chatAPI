@@ -11,5 +11,6 @@
 from chatapi import app, db
 
 if __name__ == '__main__':
-    app.run(host="localhost", port=8080, debug=False)
+    print('init chatapi')
+    app.run(host="0.0.0.0", port=8080, debug=False)
     db.create_all()

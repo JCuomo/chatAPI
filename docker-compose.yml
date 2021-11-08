@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  chatapi:
+    image: chatapi3
+    ports:
+      - 8080:8080
+    volumes:
+      - ./db/:/my/sqlite/path/ 
+  db:
+    image: nouchka/sqlite3:latest
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./db/:/root/db/
